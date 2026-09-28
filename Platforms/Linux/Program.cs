@@ -1,12 +1,12 @@
 using Microsoft.Maui.Platform.Linux;
 
-namespace MicrosoftMaui;
+namespace MicrosoftMauiSample;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var app = MauiProgramSample.CreateMauiApp();
+        var app = MauiProgram.CreateMauiApp();
         LinuxApplication.Run(app, args);
     }
 }
