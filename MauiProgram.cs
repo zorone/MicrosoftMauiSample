@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Platform.Linux.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace MicrosoftMauiSample;
 
@@ -9,6 +12,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseLinux()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
